@@ -1,12 +1,14 @@
 import React from 'react'
-
+import {motion} from 'motion/react'
 const Facilities = () => {
   return (
     <div className='container mx-auto text-center text-black bg-gray-300 p-4 shadow-lg'>
       <h1 className='text-2xl font-bold text-orange-700'>Amenities & Facilities</h1>
       <p className='text-2xl'>Every facet of Grace Resilviaa is crafted to nurture well being and community:</p>
       <div className="facility-list flex justify-between p-2 gap-4 ">
-        <img src='/images/Grace_Gallery_3.jpg' alt="facilities" className='animate-slide'/>
+        <motion.img animate={{x:20,rotate:360}} transition={{delay:1,duration:1
+
+        }}  src='/images/Grace_Gallery_3.jpg' alt="facilities" className='animate-slide'/>
         <ul className='list-disc p-8 text-left ml-4 '>
             <li><h3 className='text-2xl'>Clubhouse:</h3> A haven for gatherings and quiet reflection</li>
             <li><h3 className='text-2xl'>	Dedicated Parking: </h3> Secure basement & stilt spaces reserved for your convenience</li>
@@ -22,14 +24,18 @@ const Facilities = () => {
             <h1 className='text-2xl font-semibold'>Types of Apartments</h1>
             <p className='text-2xl'>Choose your sanctuary:</p>
             <br/>
-            <div className='flex justify-between p-2 gap-4 w-full'>
+            <div className='flex justify-evenly   w-full '>
                 <div>
-                <img src='/images/Grace_Gallery_3.jpg' alt="facilities" height="500px" width="600px" className='animate-slide object-cover'/>
+                <motion.img 
+                whileHover={{scale:1.25}}
+                src='/images/Grace_Gallery_3.jpg' alt="facilities" height="500px" width="600px" className='animate-slide object-cover hover:border-2 hover:border-[#A76545] hover:rounded-2xl'/>
                 <h2 className='text-2xl text-white bg-amber-700 w-[600px]' >Hillview Residences</h2>
                 <p>Three bedroom homes overlooking the Aravali Hills, flooded with natural light.</p>
                 </div>
                 <div>
-                <img src='/images/Grace_Gallery_6.jpg' alt="facilities"  height="500px" width="600px" className='animate-slide object-cover'/>
+                <motion.img 
+                whileHover={{scale:1.25}}
+                src='/images/Grace_Gallery_6.jpg' alt="facilities"  height="500px" width="600px" className='hover:border-2 border-[#A76545] hover:rounded-2xl object-cover '/>
                 <h2 className='text-2xl text-white bg-amber-700 w-[600px]'>Gardenview Residences</h2>
                 <p> Three bedroom homes framing lush landscaped gardens, with seamless indoor outdoor flow.</p>
                 </div>

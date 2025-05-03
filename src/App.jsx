@@ -12,7 +12,7 @@ function App() {
 
   return (
       <>
-      
+      <div className='font-ramaraja'>
       <BrowserRouter>
       <Navbar/>
         <Routes>
@@ -24,6 +24,7 @@ function App() {
         </Routes>
         <Footer/>
       </BrowserRouter>
+      </div>
       </>
   )
 }
